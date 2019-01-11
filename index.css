@@ -1,0 +1,72 @@
+body{
+  background-color: #FFFFFF;
+  color : #ffd700;
+}
+
+h3{
+  text-align: center;
+}
+
+h2{
+  color: #DF5286;
+  transition: color 0.5s ease-in-out;
+  text-align: center;
+}
+
+h1{
+  color: #FFFFFF;
+  text-align: center;
+}
+
+ul{
+  color: #000000	;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+form {
+  text-align: center;
+}
+
+
+.btn{
+  cursor: pointer;
+}
+
+.clicked{
+  color: #A9A9A9;
+}
+
+.form,
+.greeting{
+  display: none;
+  text-align: center;
+
+}
+
+.showing{
+  display: block;
+}
+.weatherCenter{
+  text-align: center;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 2s linear;  
+}
