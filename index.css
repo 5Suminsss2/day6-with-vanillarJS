@@ -16,6 +16,7 @@ h2{
 h1{
   color: #FFFFFF;
   text-align: center;
+  text-shadow: 0 0 2px #000000;
 }
 
 ul{

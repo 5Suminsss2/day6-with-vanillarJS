@@ -1,6 +1,6 @@
 const clockTimer = document.querySelector("#timer");
 function getTime() {
-  const countDownDate = new Date("Dec 10, 2018 18:00:00");
+  const countDownDate = new Date("Feb 10, 2019 18:00:00");
   const now = new Date();
 
   var distance = countDownDate - now;
@@ -10,12 +10,12 @@ function getTime() {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  clockTimer.innerText = days + "일 " + hours + "시간 "
-  + minutes + "분 " + seconds + "초 ";
+  clockTimer.innerText = days + "D " + hours + "H "
+  + minutes + "M " + seconds + "S ";
 
   if(distance <0){
     clearInterval(getTime);
-    clockTimer.innerText = "컴백!!!!";
+    clockTimer.innerText = "TIME OUT";
   }
 }
 
