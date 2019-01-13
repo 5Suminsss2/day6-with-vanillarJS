@@ -6,6 +6,7 @@ body{
 
 h3{
   text-align: center;
+  text-shadow: 0 0 2px #FFFFFF;
 }
 
 h2{
@@ -32,7 +33,13 @@ form {
 }
 
 
-.btn{
+
+.video_center{
+  margin: 0 auto; 
+  width: 550px; 
+}
+
+.btn-title{
   cursor: pointer;
 }
 
@@ -72,4 +79,34 @@ form {
   height: 100%;
   z-index: -1;
   animation: fadeIn 2s linear;  
+}
+
+
+.wrap {
+	text-align: center;
+}
+
+a {
+	-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	display: block;
+	margin: 20px auto;
+	max-width: 180px;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 20px 30px;
+}
+
+a.button {
+  color: #df5286;
+  font-weight: bold;
+	box-shadow: #df5286 0 0px 0px 2px inset;
+}
+
+a.button:hover {
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: #df5286 0 0px 0px 40px inset;
 }

@@ -1,6 +1,8 @@
 const clockTimer = document.querySelector("#timer");
+const buttonChange = document.querySelector("#buttonChange1");
+const buttonChange2 = document.querySelector("#buttonChange2");
 function getTime() {
-  const countDownDate = new Date("Feb 10, 2019 18:00:00");
+  const countDownDate = new Date("Jan 13, 2019 15:13:50");
   const now = new Date();
 
   var distance = countDownDate - now;
@@ -13,9 +15,14 @@ function getTime() {
   clockTimer.innerText = days + "D " + hours + "H "
   + minutes + "M " + seconds + "S ";
 
-  if(distance <0){
+  if(distance < 0){
     clearInterval(getTime);
     clockTimer.innerText = "TIME OUT";
+    buttonChange2.innerText = "Click M/V";
+    buttonChange.classList.add("wrap");
+    buttonChange2.classList.add("button");
+
+  
   }
 }
 
